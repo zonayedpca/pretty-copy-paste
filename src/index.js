@@ -9,6 +9,7 @@ let arr = [];
 
 app.on('ready', () => {
   let state = 0;
+  let change = 0;
   win = new BrowserWindow({show: false});
   const brandNewArr = [{
     label: 'MultiCopier',
@@ -44,8 +45,8 @@ app.on('ready', () => {
       newArr[state].checked = true;
       contextMenu = Menu.buildFromTemplate(newArr);
       appIcon.setContextMenu(contextMenu);
-
-      state++;
+      change++;
+      state = change % arr.length;
     } else {
       console.log('No Items Found');
     }
