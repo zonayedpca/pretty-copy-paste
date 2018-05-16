@@ -59,6 +59,7 @@ app.on('ready', () => {
     }];
     arr = [];
     state = 0;
+    change = 0;
     contextMenu = Menu.buildFromTemplate(clearedArr);
     appIcon.setContextMenu(contextMenu);
   });
