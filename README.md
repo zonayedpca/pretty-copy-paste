@@ -20,6 +20,13 @@ Launch the Project
 electron-forge start
 ```
 
+### Main Functionality
+It can keep multiple clipboard contents at a time. Anytime you copy something, you must tell this application to keep that contents inside this application so that it can be used later. After copying your content tell the *pretty-copy-paste* to store it using the keyboard shortcut `Command or Control + Shift + C`. You will find all the copied contents inside the system tray. Normal Copy-Paste mechanism will be as usual. But if you want to bring something from the stored contents inside *pretty-copy-paste*, then you can switch in between the stored contents using the keyboard shortcut `Command or Control + Shift + V` and then now you can paste your selected content anywhere.
+
+To clear all the stored contents from *pretty-copy-paste*, use keyboard shortcut `Command or Control + Shift + X`
+
+To exit from this application, use keyboard shortcut `Command or Control + Shift + W`
+
 ### Packaging your Project
 ```
 electron-forge package
@@ -41,6 +48,7 @@ This project is always open to put something on it. Something useful and also le
 ### Current Requirements
 This project immediately requires some contributions on:
 - User Interface as it doesn't have one
+- It doesn't support images so we need more attention to make it work properly
 - Functionality as it is now very simple, something more interactive will be better
 
 So All the developers, who are willing to contribute something, please focus on these problems first

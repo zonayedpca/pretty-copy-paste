@@ -62,4 +62,8 @@ app.on('ready', () => {
     contextMenu = Menu.buildFromTemplate(clearedArr);
     appIcon.setContextMenu(contextMenu);
   });
+
+  const exit = globalShortcut.register('CommandOrControl+Shift+W', () => {
+    app.exit();
+  });
 });
